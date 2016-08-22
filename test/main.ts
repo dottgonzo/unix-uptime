@@ -3,13 +3,12 @@ const expect = chai.expect;
 
 import UT from '../index'
 
-let inSeconds:number;
-let inMilliSeconds:number;
 
-before(()=>{
-inSeconds=UT();
-inMilliSeconds=UT('milliseconds')
-})
+
+const inSeconds=UT();
+const inMilliSeconds=UT('milliseconds')
+
+
 describe("uptime formats", () => {
 
     it("in seconds are "+inSeconds+' seconds', () => {
